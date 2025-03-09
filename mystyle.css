@@ -1,0 +1,234 @@
+body{
+    
+    background-color: #e0e0e0;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    overflow-y: none;
+
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+button{
+    border-radius: 30px;
+    background-color: #6c6358;
+    border: none;
+}
+.header-container{
+    background-color: #ffffff;
+    height: 90px;
+    width: 100%;
+    display: grid;
+
+    place-items: center;
+    padding-bottom: 10px;
+}
+.headerMenu-container{
+    display: grid;
+    grid-template-columns: repeat(2,33%);
+    place-items: center;
+    width: 100%;
+    button{
+        height: 40px;
+        width: 80%;
+        resize: none;
+    }
+}
+
+.header-buttons{
+
+    display: flex;
+    width: 35vw;
+    button{
+        width: 300px;
+        margin-right: 5px;
+    }
+}
+.principal-container{
+    background-color:rgb(166, 149, 128,0.5);
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 500px;
+    max-width: 800px;
+    min-height: 355px;
+    
+}
+.list-container{
+    width: auto; /* Ancho del contenedor */
+    height: auto; /* Altura fija */
+    overflow-y: auto; /* Muestra la barra de desplazamiento vertical si es necesario */
+    border: 1px solid transparent; /* Solo para visualización */
+    padding: 10px;
+    max-width: 400px;
+    min-height: 355px;
+
+
+}
+input{
+    background-color: transparent;
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+    border: none;
+    border-bottom-style:groove;
+    border-color: rgb(100, 100, 100);
+}
+input::placeholder {
+    color: black; /* Color del placeholder */
+    opacity: 1; /* Asegura que el color sea completamente opaco */
+}
+
+button{
+    width: 30%;
+}
+.button-container{
+    margin-top: 300px;
+
+    text-align: center;
+}
+.imgBook-container{
+    height: 240px;
+    img{
+        width: auto;
+        height: 240px;
+    }
+}
+
+.addList-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    textarea{
+        color: black;
+        opacity: 1;
+        height: 130px;
+        width: 80%;
+        border-radius: 10px ;
+        overflow-y:visible;
+        resize: none;
+        background-color: transparent;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+}
+.inputs-form{
+    height: 30px;
+    text-align: center;
+}
+.editForm{
+    input{
+        width: 80%;
+        margin: 10px;
+    }
+
+}
+.editForm{
+    width: 100%;
+    textarea{
+        color: black;
+        opacity: 1;
+        height: 130px;
+        width: 80%;
+        border-radius: 10px ;
+        overflow-y:visible;
+        resize: none;
+        background-color: transparent;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+
+}
+@media (max-width: 504px) {
+
+    .headerMenu-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,120px);
+        place-items: center;
+    }
+
+    .headerMenu-container{
+        background-color: #A69580;
+        height: 135px;
+    }
+    
+    .header-buttons{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        button{
+            height: 30px;
+            margin-bottom: 3px;
+        }
+    }
+    .principal-container{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        width: 350px;
+        border-style: groove;
+        border-color: rgb(65, 65, 65);
+        border-width: 10px;
+        textarea{
+            width: 250px;
+            height: 90px;
+        }
+    }
+    .addList-container{
+        height: 380px;
+        background-color: rgb(166, 149, 128,0.5);
+        button{
+            margin-top: 80px;
+        }
+    }
+    .list-container{
+        margin-top: 0;
+        background-color: rgb(166, 149, 128,0.5);
+    }
+    .editForm{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        input{
+            width: 250px;
+        }
+    }
+    .editForm{
+        textarea{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
+    .editButtons{
+        button{
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+.list-container::-webkit-scrollbar{
+    height: 5px;
+    width: 3px;
+}
+.list-container::-webkit-scrollbar-track{
+    background: transparent; 
+    border-radius: 10px;
+}
+.list-container::-webkit-scrollbar-thumb
+{
+    background: transparent;
+    border-radius: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class = "header-container">
+        <div class = "headerMenu-container">
+            <div class="header-logo">
+                <img src="img/logo.png">
+            </div>
+            
+            <div class="header-buttons">
+                <button id = "menuBtn">Menu</button>
+                <button onclick="window.location.href='newBooks.html';" id = "newbooksBtn">Books</button>
+                <button id = "addBooksBtn">Store a Book</button>
+                <button id = "historialBtn">Historial</button>
+            </div>
+        
+        </div>
+        
+    </header>
+    <div class = "principal-container">
+        
+        <div class = "addList-container">
+            <form class ="inputs-form">
+                <h2>Store a book</h2>
+                <input type ="text" id = "bookItem" placeholder="Book title" required>
+                <input type ="text" id = "authorItem" placeholder="Book author" required>
+                <input type ="text" id = "priceItem" placeholder="Book price" required>
+                <input type="text" id="imgId" placeholder="Image URL" required>
+                <textarea name="sinopsis" id="sinopsisId" placeholder="Sinopsis"></textarea>
+            </form>
+            
+            <div class = "button-container">
+                <button id = "purchaseBtn">Add Book</button>
+            </div>
+            <small class="error" id = "errorMsg"></small>
+        </div>
+        
+        <div class = "list-container">
+            <ul id="shoppingList">
+    
+            </ul>
+        </div>
+    </div>
+    
+    <script src = "./scripts/script.js"></script>
+    <script src="./scripts/storeManager.js"></script>
+</body>
+</html>

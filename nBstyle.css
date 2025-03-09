@@ -1,0 +1,125 @@
+body{
+    
+    background-color: #e0e0e0;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    overflow-y: none;
+
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+button{
+    border-radius: 30px;
+    background-color: #6c6358;
+    border: none;
+}
+.header-container{
+    background-color: #ffffff;
+    height: 90px;
+    width: 100%;
+    display: grid;
+
+    place-items: center;
+    padding-bottom: 10px;
+}
+.headerMenu-container{
+    display: grid;
+    grid-template-columns: repeat(2,33%);
+    place-items: center;
+    width: 100%;
+    button{
+        height: 40px;
+        width: 80%;
+        resize: none;
+    }
+}
+.header-buttons{
+
+    display: flex;
+    width: 35vw;
+    button{
+        width: 300px;
+        margin-right: 5px;
+    }
+}
+.list-container{
+    height: auto;
+    width: 100vw;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color:rgb(108, 99, 88,0.3);
+    width: auto; /* Ancho del contenedor */
+    height: auto; /* Altura fija */
+    overflow-y: auto; /* Muestra la barra de desplazamiento vertical si es necesario */
+
+}
+.ul-container
+{
+    list-style-type: none; 
+    width: 600px;
+    height: 500px;
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+
+.bookInfo-container{
+    margin-left: 40px;
+    height: 200px;
+    width: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.fulllist{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 40px;
+    img{
+        width: 200px;
+        height: 250px;
+    }
+}
+.fulllist:hover{
+    transform: scale(1.1);
+
+}
+.list-container::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    height: 5px;
+    width: 3px;
+}
+.list-container::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+.list-container::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #a67c52;
+    border-radius: 10px;
+}
+.bookInfo-container::-webkit-scrollbar{
+    height: 5px;
+    width: 3px;
+}
+.bookInfo-container::-webkit-scrollbar-track{
+    background: transparent; 
+    border-radius: 10px;
+}
+.bookInfo-container::-webkit-scrollbar-thumb
+{
+    background: transparent;
+    border-radius: 10px;
+}
+
