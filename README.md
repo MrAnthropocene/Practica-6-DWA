@@ -1,4 +1,4 @@
-# **Practice 6: Local Storage Integration
+# **Practice 6: Local Storage Integration**
 ## **Overview
 This project demonstrates the integration of Local Storage in web development by implementing a book management system. The objective is to explore how data can be stored, retrieved, modified, and deleted using Local Storage, applying best practices for client-side data persistence.
 
